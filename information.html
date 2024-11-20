@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="information.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">
+        <a href=""><img src="./img/logo.png" alt="logo" /></a>
+      </div>
+      <div class="movies">
+        <a href="">PHIM</a>
+      </div>
+      <div class="info_discounts">
+        <a href="">TIN MỚI VÀ ƯU ĐÃI</a>
+      </div>
+    </div>
+    <form>
+      <div class="info">
+        <div class="info_text">
+          <p>THÔNG TIN TÀI KHOẢN</p>
+        </div>
+        <div class="info_box">
+          <div class="inside_box">
+            <table>
+              <tr>
+                <td>
+                  <div class="left">
+                    <p><span style="color: red">*</span> Họ tên</p>
+                    <i class="fa-regular fa-circle-user"></i>
+                    <input class="input" type="text" required />
+                  </div>
+                </td>
+                <td>
+                  <div class="right">
+                    <p><span style="color: red">*</span> Email</p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                      class="input"
+                      type="text"
+                      readonly
+                      placeholder="abc@gmail.com"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="left">
+                    <p><span style="color: red">*</span> Ngày sinh</p>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <input class="input" type="date" required />
+                  </div>
+                </td>
+                <td>
+                  <div class="right">
+                    <p><span style="color: red">*</span> Số điện thoại</p>
+                    <i class="fa-solid fa-square-phone"></i>
+                    <input
+                      class="input"
+                      type="tel"
+                      required
+                      pattern="(03|05|07|08|09)[0-9]{8,9}"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="left">
+                    <p><span style="color: red">*</span> Giới tính</p>
+                    <i class="fa-solid fa-person"></i>
+                    <select name="gender" id="gender" required>
+                      <option value=""></option>
+                      <option value="male">Nam</option>
+                      <option value="female">Nữ</option>
+                      <option value="unknow">Không rõ</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="change_pass"><a href="">Đổi mật khẩu?</a></div>
+                </td>
+              </tr>
+            </table>
+            <div class="submit">
+              <input type="submit" value="CẬP NHẬT" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
